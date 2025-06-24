@@ -402,36 +402,33 @@ footer {
     font-weight: 500;
 }
 .bill-spread-section {
-    position: relative;
-    margin: 40px auto 60px auto;
-    max-width: 1200px;
-    text-align: center;
-    left: 25%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 32px 0;
+    overflow-x: auto;
 }
 .bill-spread-title {
     color: #1a6cff;
     margin-bottom: 1.5rem;
 }
 .bill-spread-gallery {
-    position: relative;
-    width: 1200px;     
-    max-width: 95vw;    
-    height: 340px;
-    margin: 0 auto 30px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 .bill-spread-img {
-    position: absolute;
-    width: 220px;
-    height: 300px;
-    object-fit: cover;
+    max-width: 180px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    background: #fff;
-    border: 2px solid #e0e0e0;
-    transition: transform 0.2s;
-    box-shadow:
-        0 8px 24px 0 rgba(24,49,83,0.13),
-        0 1.5px 0 #fff;
+    box-shadow: 0 2px 12px rgba(24,49,83,0.07);
+    object-fit: cover;
 }
 .bill-spread-img-1  { left: 0%;    top: 30px;  transform: rotate(-8deg);}
 .bill-spread-img-2  { left: 9%;    top: 0;     transform: rotate(5deg);}
