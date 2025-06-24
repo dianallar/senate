@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Allar for Senate</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="nav-home">Home</a>
+            <a href="experience.html" class="nav-accomplishments">Accomplishments</a>
+            <a href="domestic.html" class="nav-accomplishments">Domestic Policy</a>
+        </div>
+        <div class="navbar-right">
+            <form class="nav-search">
+                <input type="text" placeholder="Search…" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="styles/pacificawhole.svg" alt="Pacifica Map" class="hero-svg">
+            <div class="hero-text">
+                <h1>Diana Allar for Pacifica</h1>
+                <p class="hero-tagline">Progress, With Purpose.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Donate</a>
+                    <a href="#" class="btn btn-secondary">Volunteer</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about-photos">
+                <img src="assets/diana.jpg" alt="Diana Allar" class="about-photo">
+                <img src="assets/diana2.jpg" alt="Diana Allar speaking" class="about-photo about-photo-landscape" style="margin-top: 1rem;">
+            </div>
+            <div class="about-text">
+                <h2>Meet Diana</h2>
+                <p>Former President Diana Allar is committed to serving the people of Pacifica with integrity and dedication. Representing Utah's 3rd District, she has made many meaningful advancements in the United States Congress to benefit the people of Pacifica and America at large.</p>
+                <p>Serving in the United States Senate, as Speaker of the United States House of Representatives, Governor and Lieutenant Governor of Olympia, House Minority Leader, DNC Chair, DCCC Chair, Party Leader of the Democrats, Secretary of the Interior, as President of the United States, and now as Chief of Staff and White House Press Secretary, Diana Allar's public service knows no bounds.</p>
+                <p>Diana Allar introduced the Fix The Public Option Act to the Senate, which brought health insurance to eight million uninsured Americans. She introduced UECDEA into the House, which, upon passage, will make preschool education universally accessible for all parents and children in the United States.</p>
+            </div>
+        </section>
+        <section class="issues">
+            <h2>Key Issues</h2>
+            <div class="issues-list">
+                <div class="issue-card">
+                    <h3>Lowering Inflation</h3>
+                    <p>Creating disinflationary measures to lower costs for Americans and get our economy back on track. For too long has the government allowed inflation to increase with no remedy.</p>
+                </div>
+                <div class="issue-card">
+                    <h3>Universal Preschool</h3>
+                    <p>Ensuring every Pacifican has access to preschool education for their child, rural and urban alike, and that the education and care provided is excellent in quality.</p>
+                </div>
+                <div class="issue-card">
+                    <h3>Collective Bargaining Rights</h3>
+                    <p>Allowing our Union laborers to organize and negotiate for better wages and working conditions, and enshrining those rights into our nation's Constitution so that they may not be trampled.</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Get Involved</h2>
+            <p>Join our movement for a better Pacifica. Sign up for updates, volunteer, or attend an event!</p>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Diana Allar for Pacifica Senate. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Add social icons/links here -->
+            </div>
+        </div>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    fadeEls.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
