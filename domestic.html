@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+<style>
+  body {
+    overflow-x: hidden;
+  }
+</style>
 <body>
     <nav class="navbar">
         <div class="navbar-left">
@@ -34,4 +39,153 @@
             </div>  
         </header>
 
+        <main class="domestic-main">
+    <section class="policy-accordion">
+        <div class="policy-item blue-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Women's Rights</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/womensrights.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“Empowered women empower nations.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item white-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Education</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/education.webp');"></div>
+                <div class="policy-bio">
+                    <h3>“Education is the passport to the future.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item blue-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Labor & Workforce</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/laborandworkforce.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“Dignity in work, pride in progress.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item white-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Immigration</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/immigrationheader.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“America’s strength is found in its diversity.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item blue-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">The Environment</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/environmentheader.jpeg');"></div>
+                <div class="policy-bio">
+                    <h3>“There is no Planet B.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item white-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Transportation & Infrastructure</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/transportationheader.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“Building bridges to a better tomorrow.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item blue-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Criminal Justice</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/criminaljusticeheader.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“Justice for all, not just for some.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item white-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Housing</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/housingheader.webp');"></div>
+                <div class="policy-bio">
+                    <h3>“Home is where opportunity begins.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy-item blue-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Public Health</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/healthcareheader.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“A healthy nation is a strong nation.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        <div class="policy-item white-bg">
+            <button class="policy-toggle">
+                <span class="policy-title">Technology</span>
+                <span class="policy-arrow">&#9662;</span>
+            </button>
+            <div class="policy-content">
+                <div class="policy-image" style="background-image: url('styles/technologyheader.jpg');"></div>
+                <div class="policy-bio">
+                    <h3>“Innovation today, prosperity tomorrow.”</h3>
+                    <p>Policy details go here...</p>
+                </div>
+            </div>
+        <!-- Repeat for each subsection, alternating blue-bg and white-bg -->
+    </section>
+</main>
+
+        <script>
+document.querySelectorAll('.policy-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const item = this.closest('.policy-item');
+        // Close all other items
+        document.querySelectorAll('.policy-item').forEach(i => {
+            if(i !== item) i.classList.remove('active');
+        });
+        // Toggle the clicked item
+        item.classList.toggle('active');
+    });
+});
+</script>
+
 </body>
+</html>
